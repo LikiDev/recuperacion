@@ -14,7 +14,7 @@ function CatFacts() {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setFacts(data.data); // Asegúrate de acceder a la propiedad correcta que contiene los hechos
+        setFacts(data.data); 
       } catch (error) {
         setError('Failed to fetch cat facts: ' + error.message);
         console.error('Failed to fetch cat facts:', error);
